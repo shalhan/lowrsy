@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('contents.dashboard');
-});
+Route::get('/', ['uses'=>'InvitationController@viewInvitation', 'as'=>'/']);
+Route::get('invitation/del={id}', 'InvitationController@deleteInvitation');
