@@ -83,7 +83,7 @@ desired effect
     <!-- Main content -->
     <section class="content">
 
-      <!-- Your Page Content Here -->
+      @yield('dashboard')
 
     </section>
     <!-- /.content -->
