@@ -13,3 +13,5 @@
 
 Route::get('/', ['uses'=>'InvitationController@viewInvitation', 'as'=>'/']);
 Route::get('invitation/del={id}', 'InvitationController@deleteInvitation');
+Route::get('invitation/upt={id}', 'InvitationController@updateInvitationView');
+Route::post('invitation/update={id}', 'InvitationController@updateInvitation');

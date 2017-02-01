@@ -15,4 +15,5 @@ class Invitation extends Model
         'image_display',
         'image_preview'
     ];
+    public $timestamps = false;
 }

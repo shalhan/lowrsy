@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('master')
 
 @section('dashboard')
 <div class="box">
@@ -28,7 +28,7 @@
           <td>{{$view->invitation_name}}</td>
           <td></td>
           <td></td>
-          <td>Update | <a href="{{ url('invitation/del=' . $view->id) }}">Delete</a></td>
+          <td><a href="{{url('invitation/upt=' . $view->id)}}">Update</a> | <a href="{{ url('invitation/del=' . $view->id) }}">Delete</a></td>
         </tr>
         @endforeach
       </tbody>
